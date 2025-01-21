@@ -9,10 +9,19 @@
 #include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <set>
 #include <sstream>
+#include <streambuf>
 #include <string>
+#include <vector>
 
-#include "argparse/argparse.hpp"
 #include "png.h"
 
-#endif // M2C_CONFIG_H
+#include "utf8.h"
+
+#include "ft2build.h"
+#include FT_FREETYPE_H
+
+#include "argparse/argparse.hpp"
+
+#endif  // M2C_CONFIG_H

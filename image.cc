@@ -94,7 +94,6 @@ uint8_t* image_rgb_to_rgb565(const uint8_t* p_buffer, int p_width,
 
 void image_write_pixel_to_c(const std::string& p_file_path,
                             const uint8_t* p_buffer, int p_size) {
-  std::cout << "converting....";
   std::stringstream ss;
   ss << "#pragma once" << std::endl << std::endl;
   ss << "#include <stdint.h>" << std::endl << std::endl;
@@ -120,5 +119,4 @@ void image_write_pixel_to_c(const std::string& p_file_path,
   }
   file << ss.str();
   file.close();
-  std::cout << "done!" << std::endl;
 }
